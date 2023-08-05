@@ -19,7 +19,7 @@ class FCN(nn.Module):
                 for _ in range(N_LAYERS - 1)
             ]
         )
-        self.fce = nn.Linear(N_HIDDEN, N_INPUT, dtype=torch.float64)
+        self.fce = nn.Linear(N_HIDDEN, N_OUTPUT, dtype=torch.float64)
 
     def forward(self, x):
         x = self.fcs(x)
