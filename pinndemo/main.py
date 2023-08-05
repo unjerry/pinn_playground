@@ -64,7 +64,7 @@ optimizer = torch.optim.Adam(pinn.parameters(), lr=1e-3)
 for i in range(15000):
     optimizer.zero_grad()
 
-    lambda1, lambda2 = 1e-1, 5e-4
+    lambda1, lambda2 = 1e-1, 1e-3
 
     u = pinn(t_bond)
     loss1 = (torch.squeeze(u) - 1) ** 2
