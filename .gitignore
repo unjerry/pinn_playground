@@ -162,3 +162,5 @@ cython_debug/
 #myself
 *.png
 *.ntdt
+#outside data socket
+/socket
