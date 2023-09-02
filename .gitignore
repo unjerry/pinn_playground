@@ -167,3 +167,4 @@ cython_debug/
 *.dt
 #outside data socket
 /socket
+/.vscode
